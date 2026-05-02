@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #0a0418;
+  color: #f5f3ff;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: 'Cinzel', serif;
+}
+
+.glass-card {
+  background: rgba(45, 27, 105, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.glass-card:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #a855f7 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cosmic-bg {
+  background: radial-gradient(ellipse at top, #2d1b69 0%, #0a0418 50%, #0a0418 100%);
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+.btn-cosmic {
+  background: linear-gradient(135deg, #5b21b6 0%, #a855f7 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-cosmic:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #fbbf24 100%);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0418;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5b21b6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
